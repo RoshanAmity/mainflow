@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="Navbar">
+                <div class="Logo">
+                    <a>Main <span>Flow</span></a>
+                </div>
+                <div class="mode">
+                    <input type="checkbox" checked="checked" id="check" />
+                    <img id="sun" src="sun.png" onclick="darkMode()">
+                    <img id="moon" src="moon.png" onclick="lightMode()">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="Main">
+        <form id="Form" class="form">
+            <a>Registration Form</a>
+            <div class="Name">
+                <label class="label">Name</label>
+                <input type="text" class="name" id="name" required>
+            </div>
+            <div class="Email">
+                <label class="label">Email</label>
+                <input type="email" class="email" id="email" required>
+            </div>
+            <div class="Password">
+                <label class="label">Password</label>
+                <input type="password" class="password" id="password" required>
+            </div>
+            <div class="Number">
+                <label class="label">Phone Number</label>
+                <input type="phone" class="number" id="number" required>
+            </div>
+            <div class="Submit">
+                <input type="submit" class="submit" id="submit">
+            </div>
+            <div class="TextArea">
+                <p id="error-message"></p>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2024 By Roshan Ansari | All Rights Are Reserved</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
