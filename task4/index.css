@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Rubik", sans-serif;
+}
+
+:root {
+    --navbackground : #FFF5E1;
+    --bodybackground: #FF6969;
+    --color: #C80036;
+}
+
+body {
+    background-color: var(--bodybackground);
+    gap: 30px;
+}
+
+header nav {
+    width: 100vw;
+    background-color: var(--navbackground);
+    padding: 20px 10px 20px 30px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+header nav h1 {
+    color: var(--color);
+    font-size: 2rem;
+}
+
+
+.hold {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.hold .inputvalue{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: var(--navbackground);
+    border-radius: 10px;
+    gap: 10px;
+    padding: 20px;
+}
+
+.hold .inputvalue .input1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+.hold .inputvalue input{
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--navbackground);
+    background-color: var(--bodybackground);
+    border: 3px solid var(--bodybackground);
+    
+}
+
+.hold .inputvalue input::placeholder{
+    color: var(--navbackground);
+}
+
+.hold .inputvalue label{
+    font-size: 20px;
+    color: var(--color);
+}
+
+
+.hold .inputvalue #Add{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+        color: var(--navbackground);
+    background-color: var(--bodybackground);
+    border: 3px solid var(--bodybackground)
+}
+
+#list li{
+    width: 450px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: var(--navbackground);
+    padding: 10px;
+    list-style: none;
+    border-radius: 10px;
+    background-color: var(--bodybackground);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.todolist{
+    width: 500px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#list li img{
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 10px;
+}
+
+#list li input{
+    width: 20px;
+    height: 20px;
+}
+
+#list li span{
+   position: absolute;
+   left: 60px;
+}
+
+#list li .texttime{
+    position: absolute;
+    left: 200px;
+}
+
+
+
+
+
+
+
+
+
+
