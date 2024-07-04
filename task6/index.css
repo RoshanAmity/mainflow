@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(41, 40, 40);
+    padding: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.main {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    row-gap: 60px;
+    column-gap: 40px;
+}
+
+.main .gallery .cover {
+    overflow: hidden;
+    border-radius: 10%;
+    border-bottom: 3px solid rgb(117, 232, 232);
+    border-left: 3px solid rgb(117, 232, 232);
+    box-shadow: 10px -10px 0.5em rgb(117, 232, 232);
+    position: relative;
+}
+
+.main .gallery .cover img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+}
+
+.main .gallery .cover .name {
+    position: absolute;
+    background-color: rgb(41, 40, 40);
+    width: 250px;
+    height: 20px;
+    bottom: 0px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    font-weight: 900;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+@keyframes slideUp {
+    from {
+        bottom: -50px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0.65;
+    }
+}
+
+.main .gallery .cover img:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+.main .gallery .cover:hover {
+    border-bottom: 3px solid rgb(117, 232, 232);
+    border-left: 3px solid rgb(117, 232, 232);
+    box-shadow: -10px 10px 0.5em rgb(117, 232, 232);
+    border-top: 3px solid rgb(117, 232, 232);
+    border-right: 3px solid rgb(117, 232, 232);
+    border-bottom: none;
+    border-left: none;
+    transition: all 1s ease-in;
+}
+
+.main .gallery .cover:hover>.name {
+    display: block;
+    opacity: 1;
+    animation: slideUp 1s forwards ease-in-out;
+}
+
+.container {
+    position: relative;
+}
+
+.image {
+    width: 500px;
+    height: 500px;
+    border-radius: 10%;
+    border: 5px solid rgb(117, 232, 232);
+}
+
+.delete {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+@media (width < 600px) {
+    .image {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (width < 500px){
+    .image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .main .gallery .cover img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+    }
+
+    .main .gallery .cover .name {
+        width: 200px;
+        height: 20px;
+    }
+}
